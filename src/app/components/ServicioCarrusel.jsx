@@ -14,10 +14,9 @@ export default function ServicioCarrusel({ title, subtitle, items, rotateDir = "
   };
 
   return (
-    /* Reducido a pb-4 para que la siguiente sección suba bastante */
+
     <section className="pb-4 lg:pb-6 overflow-hidden max-w-[1440px] mx-auto px-6 lg:px-12">
-      
-      {/* Reducimos mb-8 a mb-4 para pegar el título a las fotos */}
+
       <div className="flex flex-row items-end justify-between mb-4 border-b border-slate-100 pb-3">
         <div className="flex flex-col">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter leading-none">
