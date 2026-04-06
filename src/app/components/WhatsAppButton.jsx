@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
         initial={{ opacity: 0, y: 10, scale: 0.8 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ 
-          delay: 2, // Aparece 2 segundos después de cargar la web
+          delay: 1, // Aparece 1 segundo después de cargar la web
           duration: 0.5,
           repeat: Infinity,
           repeatType: "reverse",
@@ -26,7 +26,7 @@ export default function WhatsAppButton() {
 
       {/* EL BOTÓN DE WHATSAPP */}
       <motion.a
-        href="https://wa.me/34600000000" // Cambia por el número real
+        href="https://wa.me/34661333750" // Cambia por el número real
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}
