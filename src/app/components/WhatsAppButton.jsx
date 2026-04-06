@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
         initial={{ opacity: 0, y: 10, scale: 0.8 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ 
-          delay: 1, // Aparece 1 segundo después de cargar la web
+          delay: 2, // Aparece 1 segundo después de cargar la web
           duration: 0.5,
           repeat: Infinity,
           repeatType: "reverse",
