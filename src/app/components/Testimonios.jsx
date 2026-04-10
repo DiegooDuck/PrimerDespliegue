@@ -4,7 +4,6 @@ import { Star, Quote } from "lucide-react";
 import { testimoniosData } from "@/data/testimoniosData";
 
 export default function Testimonios() {
-  // Duplicamos los datos 3 veces para asegurar que no haya huecos en pantallas anchas
   const tripleTestimonios = [...testimoniosData, ...testimoniosData, ...testimoniosData];
 
   if (!testimoniosData || testimoniosData.length === 0) return null;
@@ -22,20 +21,17 @@ export default function Testimonios() {
         </div>
       </div>
 
-      {/* CONTENEDOR DE LA ANIMACIÓN */}
       <div className="relative flex overflow-hidden">
-        {/* Este div contiene la animación de movimiento */}
-        <div className="flex gap-6 animate-marquee group-hover:pause-marquee py-4">
+        {/* Usamos las clases que definiremos en globals.css */}
+        <div className="flex gap-6 animate-marquee hover:pause-marquee py-4">
           {tripleTestimonios.map((t, index) => (
             <div 
               key={`${t.id}-${index}`} 
-              className="w-[300px] md:w-[450px] flex-shrink-0 bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 relative overflow-hidden transition-all duration-500 hover:border-[#d4af37]/40 hover:shadow-md"
+              className="w-[300px] md:w-[450px] flex-shrink-0 bg-white p-8 rounded-[2.5rem] shadow-sm border border-slate-100 relative overflow-hidden transition-all duration-500 hover:border-[#d4af37]/40 hover:shadow-md group"
             >
-              {/* Comilla decorativa */}
               <Quote className="absolute -top-4 -right-4 text-slate-50 w-24 h-24 -rotate-12 opacity-50" />
               
               <div className="relative z-10">
-                {/* Estrellas */}
                 <div className="flex gap-1 mb-5">
                   {[...Array(5)].map((_, i) => (
                     <Star 
@@ -46,12 +42,10 @@ export default function Testimonios() {
                   ))}
                 </div>
 
-                {/* Comentario */}
                 <p className="text-slate-600 italic leading-relaxed mb-8 text-sm md:text-base min-h-[100px]">
                   {t.texto}
                 </p>
 
-                {/* Cliente */}
                 <div className="flex items-center gap-4 border-t border-slate-50 pt-6">
                   <div className="w-12 h-12 rounded-full bg-slate-900 flex-shrink-0 flex items-center justify-center text-white font-bold text-lg group-hover:bg-[#d4af37] transition-colors">
                     {t.nombre.charAt(0)}
@@ -70,31 +64,6 @@ export default function Testimonios() {
           ))}
         </div>
       </div>
-
-      {/* ESTILOS CSS PARA LA ANIMACIÓN INFINITA */}
-      <style jsx>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-33.33% - 1.5rem)); } /* 1.5rem es el gap-6 */
-        }
-
-        .animate-marquee {
-          display: flex;
-          width: max-content;
-          animation: marquee 40s linear infinite;
-        }
-
-        .pause-marquee {
-          animation-play-state: paused;
-        }
-
-        /* Ajuste de velocidad para móvil */
-        @media (max-width: 768px) {
-          .animate-marquee {
-            animation: marquee 25s linear infinite;
-          }
-        }
-      `}</style>
     </section>
   );
 }

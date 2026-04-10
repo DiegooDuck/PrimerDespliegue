@@ -27,12 +27,12 @@ export default function Footer() {
           {/* 2. CONTACTO (Iconos con un pelín más de presencia) */}
           <div className="flex flex-col items-center text-center">
             <div className="flex flex-col gap-3">
-                <a href="tel:+34600000000" className="flex items-center justify-center gap-3 text-slate-400 hover:text-[#d4af37] transition-colors text-[13px]">
+                <a href="tel:+34691426670" className="flex items-center justify-center gap-3 text-slate-400 hover:text-[#d4af37] transition-colors text-[13px]">
                   <Phone size={14} className="text-[#d4af37]" />
                   +34 691426670
                 </a>
 
-                <a href="mailto:info@tureforma.com" className="flex items-center justify-center gap-3 text-slate-400 hover:text-[#d4af37] transition-colors text-[13px]">
+                <a href="sgpisopared@gmail.com" className="flex items-center justify-center gap-3 text-slate-400 hover:text-[#d4af37] transition-colors text-[13px]">
                   <Mail size={14} className="text-[#d4af37]" />
                 sgpisopared@gmail.com
                 </a>

@@ -86,7 +86,7 @@ export default function Navbar() {
                                 <a 
                                     onClick={() => setIsOpen(false)}
                                     className="bg-[#d4af37] text-white px-8 py-4 rounded-2xl inline-block w-full text-center text-lg shadow-lg" 
-                                    href="https://wa.me/34661333750"
+                                    href="https://wa.me/34691426670"
                                 >
                                     Solicitar Presupuesto
                                 </a>
