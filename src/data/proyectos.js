@@ -5,7 +5,7 @@ export const proyectos = [
     id: 1, 
     title: "Cocina Integral", 
     category: "Reformas", 
-    img: "/Proyectos/proyectobaño.png" , 
+    img: "/Proyectos/proyectococina.png" , 
     grid: "md:col-span-3 md:row-span-2", 
     reciente: true 
   },
@@ -13,7 +13,7 @@ export const proyectos = [
     id: 2, 
     title: "Suelo Vinílico", 
     category: "Acabados", 
-    img: "/Proyectos/proyectococina.png" , 
+    img: "/Proyectos/proyectoducha.png" , 
     grid: "md:col-span-2 md:row-span-1",
     reciente: false
   },
@@ -21,7 +21,7 @@ export const proyectos = [
     id: 3, 
     title: "Iluminación", 
     category: "Electricidad", 
-    img: "/Proyectos/proyectoducha.png", 
+    img: "/Proyectos/proyectobaño.png", 
     grid: "md:col-span-1 md:row-span-1",
     reciente: false
   },

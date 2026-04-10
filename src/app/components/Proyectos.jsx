@@ -5,7 +5,6 @@ import { proyectos } from "../../data/proyectos";
 import { motion } from "framer-motion";
 
 export default function ProyectosCollage() {
-  // Variantes para que los proyectos aparezcan uno tras otro
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -20,16 +19,16 @@ export default function ProyectosCollage() {
       opacity: 1, 
       y: 0, 
       scale: 1,
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } // Ease tipo "Expo" muy elegante
+      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } 
     }
   };
 
   return (
-    <section className="py-12 lg:py-16 bg-slate-50/50 overflow-hidden">
+    <section id="proyectos" className="py-12 lg:py-16 bg-slate-50/50 overflow-hidden">
       <motion.div 
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }} // Se activa 100px antes de entrar
+        viewport={{ once: true, margin: "-100px" }}
         variants={containerVariants}
         className="max-w-[1200px] mx-auto px-6 lg:px-12"
       >
@@ -38,7 +37,7 @@ export default function ProyectosCollage() {
         <motion.div variants={cardVariants} className="mb-12">
           <span className="text-slate-400 text-sm font-bold uppercase tracking-[0.3em]">Portafolio</span>
           <h2 className="text-3xl md:text-5xl font-black tracking-tighter mt-2 uppercase">
-            Últimos <span className="text-slate-300">Proyectos</span>
+            Modelos de<span className="text-slate-300"> Proyectos</span>
           </h2>
         </motion.div>
 
@@ -95,11 +94,7 @@ export default function ProyectosCollage() {
              >
                 <div className="relative w-full h-full overflow-hidden rounded-[2.2rem]">
                   <Image src={p.img} alt={p.title} fill className="object-cover transition-transform duration-1000 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                    <h4 className="text-white font-bold uppercase text-xs tracking-[0.3em] border border-white/30 px-4 py-2 backdrop-blur-md">
-                      Ver Proyecto
-                    </h4>
-                  </div>
+                  
                 </div>
              </motion.div>
            ))}

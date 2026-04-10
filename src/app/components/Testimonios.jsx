@@ -10,7 +10,7 @@ export default function Testimonios() {
   if (!testimoniosData || testimoniosData.length === 0) return null;
 
   return (
-    <section className="py-12 lg:py-24 bg-slate-50/50 overflow-hidden">
+    <section id="testimonios" className="py-12 lg:py-24 bg-slate-50/50 overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12 mb-12">
         <div className="flex flex-col">
           <span className="text-slate-400 text-[10px] md:text-xs font-bold uppercase tracking-[0.3em] mb-2">
@@ -23,7 +23,7 @@ export default function Testimonios() {
       </div>
 
       {/* CONTENEDOR DE LA ANIMACIÓN */}
-      <div className="relative flex overflow-hidden group">
+      <div className="relative flex overflow-hidden">
         {/* Este div contiene la animación de movimiento */}
         <div className="flex gap-6 animate-marquee group-hover:pause-marquee py-4">
           {tripleTestimonios.map((t, index) => (
@@ -48,7 +48,7 @@ export default function Testimonios() {
 
                 {/* Comentario */}
                 <p className="text-slate-600 italic leading-relaxed mb-8 text-sm md:text-base min-h-[100px]">
-                  "{t.texto}"
+                  {t.texto}
                 </p>
 
                 {/* Cliente */}

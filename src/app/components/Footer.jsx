@@ -29,12 +29,12 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
                 <a href="tel:+34600000000" className="flex items-center justify-center gap-3 text-slate-400 hover:text-[#d4af37] transition-colors text-[13px]">
                   <Phone size={14} className="text-[#d4af37]" />
-                  +34 661 333 750
+                  +34 691426670
                 </a>
 
                 <a href="mailto:info@tureforma.com" className="flex items-center justify-center gap-3 text-slate-400 hover:text-[#d4af37] transition-colors text-[13px]">
                   <Mail size={14} className="text-[#d4af37]" />
-                  sgpisopared@gmail.com
+                sgpisopared@gmail.com
                 </a>
 
                 <div className="flex items-center justify-center gap-3 text-slate-400 text-[13px]">
@@ -66,12 +66,9 @@ export default function Footer() {
         {/* BARRA INFERIOR LEGAL */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center">
           <p className="text-[10px] uppercase tracking-[0.2em] text-slate-600 font-bold">
-            © {currentYear} TU REFORMA — TODOS LOS DERECHOS RESERVADOS.
-          </p>
-          <div className="flex gap-8">
-            <a href="#" className="text-[9px] uppercase tracking-widest text-slate-500 hover:text-white transition-colors font-bold">Privacidad</a>
-            <a href="#" className="text-[9px] uppercase tracking-widest text-slate-500 hover:text-white transition-colors font-bold">Cookies</a>
-          </div>
+  © {new Date().getFullYear()} SGPisoPared — TODOS LOS DERECHOS RESERVADOS.
+</p>
+         
         </div>
 
       </div>

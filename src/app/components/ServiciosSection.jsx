@@ -5,14 +5,13 @@ import { reformasData, limpiezaData } from "../../data/serviciosData";
 
 export default function ServiciosSection() {
   return (
-    <div className="bg-white text-black font-sans pt-12 selection:bg-black selection:text-white">
+    <div id="servicios" className="bg-white text-black font-sans pt-12 selection:bg-black selection:text-white">
       
       {/* TÍTULO PRINCIPAL */}
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12 text-center mb-10 md:mb-16">
         <div className="flex items-center justify-center gap-4 mb-4">
           <div className="h-[1px] w-8 md:w-12 bg-slate-200"></div>
           <span className="text-slate-400 font-bold text-[10px] md:text-xs uppercase tracking-[0.4em]">Descubre nuestra excelencia</span>
-          <div className="h-[1px] w-8 md:w-12 bg-slate-200"></div>
         </div>
         <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-slate-950">
           NUESTROS <span className="text-slate-300">SERVICIOS</span>

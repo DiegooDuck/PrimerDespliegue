@@ -43,21 +43,9 @@ export const reformasData = [
   },
   { 
     id: "08", 
-    title: "ACABADOS", 
-    desc: "Detalles finales de alta costura que definen la personalidad de cada estancia.", 
-    img: "/ServiciosReforma/acabados.jpg" 
-  },
-  { 
-    id: "09", 
-    title: "FONTANERIA", 
-    desc: "Soluciones hídricas eficientes e instalaciones térmicas de alto rendimiento.", 
-    img: "/ServiciosReforma/fontaneria.jpg" 
-  },
-  { 
-    id: "10", 
     title: "MANTENIMIENTO GENERAL", 
     desc: "Cuidado integral preventivo para mantener tu propiedad en estado de estreno.", 
-    img: "/ServiciosReforma/mantenimiento.jpg" 
+    img: "/ServiciosReforma/general.png" 
   }
 ];
 
@@ -70,54 +58,39 @@ export const limpiezaData = [
     id: "01", 
     title: "Portales y Recepciones", 
     desc: "Mantenimiento impecable de accesos principales para una primera impresión de alto nivel.", 
-    img: "/ServiciosLimpieza/portal.png" 
+    img: "/ServiciosLimpieza/portales.png" 
   },
   { 
     id: "02", 
     title: "Escaleras y Rellanos", 
     desc: "Limpieza profunda y desinfección de zonas de tránsito común en comunidades y edificios.", 
-    img: "/ServiciosLimpieza/escaleras.png" 
+    img: "/ServiciosLimpieza/escaleras.jpg" 
   },
+  
+  
   { 
     id: "03", 
-    title: "Cristales y Vidrios VIP", 
-    desc: "Técnicas avanzadas para una transparencia total y cristales libres de rastro en ventanales.", 
-    img: "/ServiciosLimpieza/cristales.png" 
+    title: "Zonas Exteriores y Jardín", 
+    desc: "Contamos con maquinaria especializada para el mantenimiento estético de áreas recreativas exteriores para un entorno limpio y saludable.", 
+    img: "/ServiciosLimpieza/limpiezaJardin.jpg" 
   },
+  
   { 
     id: "04", 
-    title: "Azoteas y Terrazas", 
-    desc: "Tratamientos específicos para superficies exteriores expuestas a la intemperie y suciedad.", 
-    img: "/ServiciosLimpieza/terraza.png" 
+    title: "Mantenimiento de Mobiliario", 
+    desc: "Cuidado especializado de muebles y activos de oficina para prolongar su estado y vida útil.", 
+    img: "/ServiciosLimpieza/limpiezaInmobiliarias.png" 
   },
   { 
     id: "05", 
-    title: "Zonas Exteriores y Jardín", 
-    desc: "Mantenimiento estético de áreas recreativas exteriores para un entorno limpio y saludable.", 
-    img: "/ServiciosLimpieza/exterior.jpg" 
+    title: "Limpieza de Ascensores", 
+    desc: "Tratamiento de acero, espejos y botoneras para cabinas higiénicas con acabado espejo.", 
+    img: "/ServiciosLimpieza/limpiezaAsensores.jpg" 
   },
   { 
     id: "06", 
-    title: "Higiene y Desinfección Industrial", 
-    desc: "Protocolos técnicos de limpieza para espacios comerciales y sanitarios de alta exigencia.", 
-    img: "/ServiciosLimpieza/higiene.jpg" 
-  },
-  { 
-    id: "07", 
-    title: "Mantenimiento de Mobiliario", 
-    desc: "Cuidado especializado de muebles y activos de oficina para prolongar su estado y vida útil.", 
-    img: "/ServiciosLimpieza/mobiliario.jpg" 
-  },
-  { 
-    id: "08", 
-    title: "Limpieza de Ascensores", 
-    desc: "Tratamiento de acero, espejos y botoneras para cabinas higiénicas con acabado espejo.", 
-    img: "/ServiciosLimpieza/ascensor.jpg" 
-  },
-  { 
-    id: "09", 
     title: "Patios y Puertas de Acceso", 
     desc: "Limpieza técnica de portones y patios interiores para una estética uniforme en toda la finca.", 
-    img: "/ServiciosLimpieza/patios.jpg" 
+    img: "/ServiciosLimpieza/limpiezaportones.png" 
   }
 ];

@@ -11,11 +11,11 @@ export default function WhatsAppButton() {
         initial={{ opacity: 0, y: 10, scale: 0.8 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ 
-          delay: 2, // Aparece 1 segundo después de cargar la web
+          delay: 2, 
           duration: 0.5,
           repeat: Infinity,
           repeatType: "reverse",
-          repeatDelay: 4 // Se mueve un poquito cada 4 segundos para llamar la atención
+          repeatDelay: 4 
         }}
         className="bg-white text-black text-[11px] font-bold py-1.5 px-3 rounded-xl rounded-br-none shadow-xl border border-gray-100 mb-1 relative"
       >
@@ -26,7 +26,7 @@ export default function WhatsAppButton() {
 
       {/* EL BOTÓN DE WHATSAPP */}
       <motion.a
-        href="https://wa.me/34661333750" // Cambia por el número real
+        href="https://wa.me/34691426670"
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}

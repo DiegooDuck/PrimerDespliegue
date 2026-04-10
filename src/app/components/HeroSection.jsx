@@ -4,13 +4,12 @@ import { MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
-    // Variantes para animar los hijos de forma escalonada
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2, // Tiempo entre que aparece un elemento y el siguiente
+                staggerChildren: 0.2,
             },
         },
     };
@@ -21,7 +20,7 @@ export default function HeroSection() {
     };
 
     return(
-        <section className="relative min-h-screen flex items-center overflow-hidden">
+        <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <Image 
                     src="/bg-hero.jpg" 
@@ -67,23 +66,29 @@ export default function HeroSection() {
                     </motion.div>
 
                     {/* 4. Botones con efecto Hover y entrada */}
-                    <motion.div variants={itemVariants} className="flex flex-col gap-3 items-stretch w-full md:w-auto md:flex-row md:items-start">
-                        <motion.button 
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="text-white py-4 px-6 flex justify-center bg-[#d4af37] gap-2 items-center font-bold rounded-2xl [text-shadow:_0_1px_2px_rgba(0,0,0,0.4)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] cursor-pointer transition-all duration-300"
-                        >
-                            Solicitar presupuesto <MoveRight /> 
-                        </motion.button>
-                        
-                        <motion.button 
-                            whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
-                            whileTap={{ scale: 0.95 }}
-                            className="text-white py-4 px-6 bg-transparent border border-white/40 rounded-2xl cursor-pointer font-bold transition-all duration-200"
-                        >
-                            Ver servicios
-                        </motion.button>
-                    </motion.div>
+                   <motion.div variants={itemVariants} className="flex flex-col gap-3 items-stretch w-full md:w-auto md:flex-row md:items-start">
+                    {/* BOTÓN WHATSAPP */}
+                    <motion.a 
+                        href="https://wa.me/34691426670"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="text-white py-4 px-6 flex justify-center bg-[#d4af37] gap-2 items-center font-bold rounded-2xl [text-shadow:_0_1px_2px_rgba(0,0,0,0.4)] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)] cursor-pointer transition-all duration-300 no-underline"
+                    >
+                        Solicitar presupuesto <MoveRight /> 
+                    </motion.a>
+                    
+                    {/* BOTÓN VER SERVICIOS (Anclaje interno) */}
+                    <motion.a 
+                        href="#servicios"
+                        whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+                        whileTap={{ scale: 0.95 }}
+                        className="text-white py-4 px-6 bg-transparent border border-white/40 rounded-2xl cursor-pointer font-bold transition-all duration-200 text-center no-underline"
+                    >
+                        Ver servicios
+                    </motion.a>
+                </motion.div>
                 </div>
             </motion.div>
         </section>
