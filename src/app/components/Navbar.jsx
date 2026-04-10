@@ -62,7 +62,7 @@ export default function Navbar() {
                                     isScrolled 
                                     ? "bg-black text-white hover:bg-slate-800" 
                                     : "bg-[#d4af37] text-white hover:brightness-110"
-                                }`} href="https://wa.me/34661333750" target="_blank">
+                                }`} href="https://wa.me/34691426670" target="_blank">
                                     Presupuesto
                                 </a>
                             </li>
